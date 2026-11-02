@@ -1,0 +1,1244 @@
+/* ========================================
+   KIT BUDI - STYLE UTAMA
+======================================== */
+
+
+/* ========================================
+   RESET ASAS
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+}
+
+
+/* ========================================
+   HALAMAN UTAMA
+======================================== */
+
+.home-page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #fffaf0;
+    overflow: visible;
+}
+
+
+/* ========================================
+   LOGO KIT BUDI - HALAMAN UTAMA
+======================================== */
+
+.logo-container {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    z-index: 20;
+}
+
+.logo-container .logo {
+    width: 105px;
+    height: auto;
+    display: block;
+}
+
+
+/* ========================================
+   BUTANG MUZIK - GAYA UTAMA
+======================================== */
+
+.music-button {
+    border: none;
+    border-radius: 15px;
+    padding: 14px 24px;
+    background: #2f7d65;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+}
+
+.music-button:hover {
+    transform: scale(1.05);
+    background: #256651;
+}
+
+
+/* ========================================
+   KEDUDUKAN MUZIK - HALAMAN UTAMA SAHAJA
+======================================== */
+
+.home-page > .music-button,
+.home-page .music-button {
+    position: absolute;
+    top: 22px;
+    right: 35px;
+    z-index: 20;
+}
+
+
+/* ========================================
+   KANDUNGAN HALAMAN UTAMA
+======================================== */
+
+.home-content {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+
+/* ========================================
+   GAMBAR PENGEMBARAAN
+======================================== */
+
+.adventure-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+    object-position: center center;
+    display: block;
+}
+
+
+/* ========================================
+   BUTANG MULA PENGEMBARAAN
+======================================== */
+
+.start-button {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 18px;
+    padding: 18px 50px;
+    background: #ee765b;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+    z-index: 10;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.start-button:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+
+/* ========================================
+   RAK BUKU
+   ELAK BUTANG MUZIK BERTINDIH
+======================================== */
+
+.rakbuku-header .music-button {
+    position: static;
+    top: auto;
+    right: auto;
+    z-index: auto;
+    margin: 0;
+}
+
+
+/* ========================================
+   BIODATA
+   ELAK BUTANG MUZIK BERTINDIH
+======================================== */
+
+.biodata-header .music-button {
+    position: static;
+    top: auto;
+    right: auto;
+    z-index: auto;
+    margin: 0;
+}
+
+
+/* ========================================
+   INTRO - VIDEO PENGENALAN
+======================================== */
+
+.intro-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 5vw;
+    display: flex;
+    flex-direction: column;
+    background: #fffaf0;
+}
+
+/* Header intro */
+
+.intro-header {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.intro-logo {
+    width: 110px;
+    height: auto;
+}
+
+/* Kandungan utama intro */
+
+.intro-content {
+    width: 100%;
+    max-width: none;
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tajuk */
+
+.intro-content h1 {
+    color: #263b70;
+    font-size: clamp(28px, 2.2vw, 42px);
+    margin: 10px 0;
+}
+
+/* Penerangan */
+
+.intro-description {
+    color: #666;
+    font-size: clamp(15px, 1.2vw, 19px);
+    margin: 0 0 20px;
+}
+
+
+/* ========================================
+   VIDEO BESAR
+======================================== */
+
+.video-container {
+    width: min(90vw, 1300px);
+    background: #222;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.intro-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 68vh;
+    object-fit: contain;
+}
+
+
+/* ========================================
+   BUTANG INTRO
+======================================== */
+
+.intro-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.intro-button {
+    padding: 15px 28px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.intro-button:hover {
+    opacity: 0.9;
+    transform: translateY(-3px) scale(1.03);
+}
+
+
+/* ========================================
+   PILIH PERMAINAN
+======================================== */
+
+.activity-selection-page {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+    color: #263f78;
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+   LOGO PILIH PERMAINAN
+======================================== */
+
+.activity-logo {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    width: 105px;
+    height: auto;
+    z-index: 20;
+}
+
+
+/* ========================================
+   BUTANG ATAS PILIH PERMAINAN
+======================================== */
+
+.activity-top-buttons {
+    position: absolute;
+    top: 22px;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 20;
+}
+
+.music-btn,
+.home-btn {
+    border: none;
+    border-radius: 25px;
+    padding: 13px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.music-btn {
+    background: #4260b0;
+}
+
+.home-btn {
+    background: #ed9c2f;
+}
+
+.music-btn:hover,
+.home-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* ========================================
+   KANDUNGAN PILIH PERMAINAN
+======================================== */
+
+.activity-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: clamp(100px, 12vh, 150px) 4vw 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ========================================
+   TAJUK PILIH PERMAINAN
+======================================== */
+
+.activity-heading {
+    text-align: center;
+    margin-bottom: clamp(12px, 2vh, 22px);
+}
+
+.activity-heading h1 {
+    margin: 0 0 8px;
+    color: #263f78;
+    font-size: clamp(32px, 2.6vw, 46px);
+    font-weight: bold;
+}
+
+.activity-heading p {
+    margin: 0;
+    color: #444;
+    font-size: clamp(14px, 1.1vw, 18px);
+}
+
+
+/* ========================================
+   SENARAI PERMAINAN
+======================================== */
+
+.PERM AINAN-container {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: clamp(15px, 1.5vw, 25px);
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   KAD PERMAINAN
+   TAJUK DAN BUTANG DISUSUN RAPAT
+======================================== */
+
+.PERM AINAN-card {
+    width: clamp(300px, 29vw, 440px);
+    min-height: 0;
+    padding: clamp(15px, 1.5vw, 22px);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.PERM AINAN-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+
+/* ========================================
+   KANDUNGAN DALAM KAD
+======================================== */
+
+.PERM AINAN-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ========================================
+   GAMBAR PERMAINAN
+======================================== */
+
+.PERM AINAN-image {
+    width: 100%;
+    height: clamp(180px, 21vh, 250px);
+    object-fit: contain;
+    border-radius: 14px;
+    display: block;
+    margin: 0 0 8px;
+    background: #f5f7fc;
+}
+
+
+/* ========================================
+   ICON JIKA GAMBAR TIDAK DIJUMPAI
+======================================== */
+
+.PERM AINAN-icon {
+    width: 140px;
+    height: 140px;
+    margin: 15px auto 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    background: linear-gradient(145deg, #dce9ff, #b8d4ff);
+}
+
+
+/* ========================================
+   TAJUK DALAM KAD PERMAINAN
+======================================== */
+
+.PERM AINAN-card h2 {
+    margin: 5px 0 0;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #263f78;
+    font-size: clamp(18px, 1.4vw, 24px);
+    line-height: 1.3;
+}
+
+
+/* ========================================
+   BUTANG MAIN PERMAINAN
+   RAPAT DI BAWAH TAJUK
+======================================== */
+
+.PERM AINAN-btn {
+    width: 75%;
+    max-width: 240px;
+    min-height: 44px;
+    border: none;
+    border-radius: 30px;
+    padding: 11px 18px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    background: #4260b0;
+    color: white;
+    font-size: clamp(12px, 1vw, 15px);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.PERM AINAN-btn:hover {
+    background: #263f78;
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   BUTANG KEMBALI
+======================================== */
+
+.back-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: clamp(18px, 2.5vh, 28px);
+}
+
+.back-btn {
+    display: inline-block;
+    border-radius: 25px;
+    padding: 13px 22px;
+    background: #777;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* BUTANG PILIH BUKU DAN RAK BUKU - PILIH PERMAINAN */
+.activity-selection-page .back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    min-height: 48px;
+    padding: 14px 28px;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   MESEJ
+======================================== */
+
+.message {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+
+/* ========================================
+   LAPTOP / TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* Halaman utama */
+
+    .logo-container {
+        top: 15px;
+        left: 20px;
+    }
+
+    .logo-container .logo {
+        width: 85px;
+    }
+
+    .home-page .music-button {
+        top: 18px;
+        right: 20px;
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+
+    .home-content {
+        min-height: 100vh;
+    }
+
+    .adventure-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .start-button {
+        bottom: 20px;
+        padding: 16px 38px;
+        font-size: 14px;
+    }
+
+
+    /* Intro */
+
+    .intro-page {
+        padding: 20px 4vw;
+    }
+
+    .intro-logo {
+        width: 90px;
+    }
+
+    .video-container {
+        width: 94vw;
+    }
+
+    .intro-video {
+        max-height: 65vh;
+    }
+
+
+    /* Pilih Permainan */
+
+    .activity-logo {
+        width: 85px;
+        top: 15px;
+        left: 20px;
+    }
+
+    .activity-top-buttons {
+        top: 18px;
+        right: 20px;
+    }
+
+    .music-btn,
+    .home-btn {
+        padding: 11px 16px;
+        font-size: 11px;
+    }
+
+    .activity-content {
+        padding: 105px 3vw 25px;
+    }
+
+    .activity-heading {
+        margin-bottom: 15px;
+    }
+
+    .PERMAINAN-container {
+        gap: 15px;
+    }
+
+    .PERMAINAN-card {
+        width: min(31vw, 360px);
+        padding: 15px;
+    }
+
+    .PERMAINAN-image {
+        height: 190px;
+    }
+
+    .PERMAINAN-btn {
+        width: 85%;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Halaman utama */
+
+    .home-page {
+        min-height: 100vh;
+    }
+
+    .logo-container {
+        top: 12px;
+        left: 12px;
+    }
+
+    .logo-container .logo {
+        width: 65px;
+    }
+
+    .home-page .music-button {
+        top: 15px;
+        right: 12px;
+        padding: 10px 14px;
+        font-size: 10px;
+    }
+
+    .home-content {
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .adventure-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .start-button {
+        bottom: 18px;
+        padding: 14px 25px;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+
+
+    /* Header halaman lain */
+
+    .rakbuku-header .music-button,
+    .biodata-header .music-button {
+        padding: 10px 14px;
+        font-size: 11px;
+    }
+
+
+    /* Intro Mobile */
+
+    .intro-page {
+        padding: 15px;
+    }
+
+    .intro-logo {
+        width: 75px;
+    }
+
+    .intro-content {
+        justify-content: center;
+    }
+
+    .intro-content h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .intro-description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .video-container {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .intro-video {
+        width: 100%;
+        max-height: none;
+    }
+
+    .intro-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .intro-button {
+        width: 90%;
+        padding: 14px 20px;
+    }
+
+
+    /* Pilih Permainan Mobile */
+
+    .activity-selection-page {
+        min-height: 100vh;
+    }
+
+    .activity-logo {
+        width: 65px;
+        top: 12px;
+        left: 12px;
+    }
+
+    .activity-top-buttons {
+        top: 12px;
+        right: 12px;
+        gap: 6px;
+    }
+
+    .music-btn,
+    .home-btn {
+        padding: 9px 10px;
+        font-size: 9px;
+    }
+
+    .activity-content {
+        padding: 90px 15px 25px;
+    }
+
+    .activity-heading {
+        margin-bottom: 15px;
+    }
+
+    .activity-heading h1 {
+        font-size: 25px;
+    }
+
+    .activity-heading p {
+        font-size: 13px;
+    }
+
+    .PERMAINAN-container {
+        gap: 18px;
+    }
+
+    .PERMAINAN-card {
+        width: min(100%, 360px);
+        padding: 18px;
+    }
+
+    .PERMAINAN-image {
+        height: 200px;
+    }
+
+    .PERMAINAN-card h2 {
+        font-size: 19px;
+    }
+
+    .PERMAINAN-btn {
+        width: 75%;
+        padding: 12px 18px;
+        margin-top: 14px;
+    }
+
+    .back-container {
+        margin-top: 20px;
+    }
+
+    .activity-selection-page .back-btn {
+        min-width: 125px;
+        min-height: 44px;
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+}
+/* ========================================
+   BESARKAN SEMUA BUTANG KIT BUDI
+======================================== */
+
+button,
+a[class*="btn"],
+a[class*="button"],
+input[type="button"],
+input[type="submit"] {
+
+    min-height: 48px;
+    padding: 15px 28px !important;
+
+    font-size: 15px !important;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Kesan apabila mouse berada atas butang */
+
+button:hover,
+a[class*="btn"]:hover,
+a[class*="button"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+
+    transform: scale(1.05);
+}
+
+
+/* BUTANG UNTUK TELEFON */
+
+@media (max-width: 600px) {
+
+    button,
+    a[class*="btn"],
+    a[class*="button"],
+    input[type="button"],
+    input[type="submit"] {
+
+        min-height: 44px;
+        padding: 12px 20px !important;
+        font-size: 13px !important;
+
+    }
+
+}
+/* ============================================
+   KIT BUDI - BUTTON SIZE 2.5X
+   Semua halaman dan semua button utama
+============================================ */
+
+/* SAIZ ASAS SEMUA BUTTON */
+button,
+a[class*="btn"],
+a[class*="button"],
+input[type="button"],
+input[type="submit"],
+.home-btn,
+.music-btn,
+.music-button,
+.home-button,
+.back-btn,
+.select-btn,
+.start-button,
+.intro-button,
+.level-btn,
+.select-level-btn,
+.PERM AINAN-btn {
+    font-size: 22px !important;
+    font-weight: 800 !important;
+
+    padding: 28px 42px !important;
+
+    min-height: 85px !important;
+    min-width: 190px !important;
+
+    border-radius: 50px !important;
+
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+    box-sizing: border-box !important;
+
+    line-height: 1.3 !important;
+    cursor: pointer;
+}
+
+/* BUTTON MAIN PERMAINAN 1, 2 DAN 3 */
+.PERM AINAN-btn {
+    font-size: 22px !important;
+    min-height: 85px !important;
+    min-width: 190px !important;
+    padding: 28px 42px !important;
+}
+
+/* KESAN HOVER */
+button:hover,
+a[class*="btn"]:hover,
+a[class*="button"]:hover {
+    transition: 0.25s ease;
+}
+
+/* PAPARAN TABLET DAN TELEFON */
+@media (max-width: 768px) {
+    button,
+    a[class*="btn"],
+    a[class*="button"],
+    input[type="button"],
+    input[type="submit"] {
+        font-size: 17px !important;
+        padding: 18px 25px !important;
+        min-height: 60px !important;
+        min-width: 140px !important;
+    }
+}
+/* =====================================================
+   KIT BUDI - BESARKAN SEMUA TAJUK DAN PENERANGAN
+   KEUTAMAAN: PILIH PERMAINAN
+===================================================== */
+
+
+/* =====================================================
+   1. RAK BUKU KIT BUDI
+===================================================== */
+
+html body .rakbuku-content h1 {
+    font-size: clamp(42px, 3.5vw, 58px) !important;
+    line-height: 1.2 !important;
+}
+
+html body .rakbuku-content .subtitle {
+    font-size: clamp(19px, 1.6vw, 25px) !important;
+    line-height: 1.6 !important;
+}
+
+
+/* TAJUK TAHAP RENDAH DAN SEDERHANA */
+
+html body .level-card h2 {
+    font-size: clamp(30px, 2.3vw, 38px) !important;
+    line-height: 1.3 !important;
+}
+
+html body .level-card p {
+    font-size: clamp(18px, 1.4vw, 22px) !important;
+    line-height: 1.7 !important;
+}
+
+
+/* =====================================================
+   2. VIDEO PENGENALAN - TAHAP RENDAH / SEDERHANA
+===================================================== */
+
+html body .intro-content h1 {
+    font-size: clamp(38px, 3.2vw, 54px) !important;
+    line-height: 1.25 !important;
+}
+
+html body .intro-description {
+    font-size: clamp(19px, 1.5vw, 24px) !important;
+    line-height: 1.7 !important;
+}
+
+
+/* =====================================================
+   3. PILIH BUKU CERITA
+===================================================== */
+
+html body.book-selection-page .heading h1 {
+    font-size: clamp(40px, 3.2vw, 54px) !important;
+    line-height: 1.25 !important;
+}
+
+html body.book-selection-page .heading p {
+    font-size: clamp(19px, 1.5vw, 24px) !important;
+    line-height: 1.6 !important;
+}
+
+
+/* =====================================================
+   4. MASA MEMBACA
+===================================================== */
+
+html body .book-heading h2 {
+    font-size: clamp(34px, 2.8vw, 46px) !important;
+    line-height: 1.3 !important;
+}
+
+html body .book-heading p {
+    font-size: clamp(21px, 1.7vw, 27px) !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =====================================================
+   5. PILIH PERMAINAN - PALING PENTING
+===================================================== */
+
+html body.activity-selection-page .activity-heading h1 {
+    font-size: clamp(42px, 3.5vw, 58px) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+}
+
+html body.activity-selection-page .activity-heading p {
+    font-size: clamp(19px, 1.6vw, 25px) !important;
+    line-height: 1.6 !important;
+}
+
+
+/* =====================================================
+   6. NAMA PERMAINAN DALAM KAD
+===================================================== */
+
+html body.activity-selection-page .PERMAINAN-card h2 {
+    font-size: clamp(22px, 1.8vw, 28px) !important;
+    line-height: 1.4 !important;
+}
+
+
+/* =====================================================
+   7. TAJUK PERMAINAN YANG SEDANG DIMAINKAN
+===================================================== */
+
+html body .PERMAINAN-heading h1 {
+    font-size: clamp(30px, 2.5vw, 42px) !important;
+    line-height: 1.3 !important;
+}
+
+html body .PERMAINAN-heading p {
+    font-size: clamp(17px, 1.3vw, 21px) !important;
+}
+
+
+/* =====================================================
+   8. PAPARAN TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    html body .rakbuku-content h1 {
+        font-size: 38px !important;
+    }
+
+    html body .level-card h2 {
+        font-size: 28px !important;
+    }
+
+    html body .level-card p {
+        font-size: 18px !important;
+    }
+
+    html body .intro-content h1 {
+        font-size: 34px !important;
+    }
+
+    html body .intro-description {
+        font-size: 18px !important;
+    }
+
+    html body.book-selection-page .heading h1 {
+        font-size: 36px !important;
+    }
+
+    html body.book-selection-page .heading p {
+        font-size: 18px !important;
+    }
+
+    html body.activity-selection-page .activity-heading h1 {
+        font-size: 38px !important;
+    }
+
+    html body.activity-selection-page .activity-heading p {
+        font-size: 18px !important;
+    }
+}
+
+
+/* =====================================================
+   9. PAPARAN TELEFON
+===================================================== */
+
+@media (max-width: 600px) {
+
+    html body .rakbuku-content h1 {
+        font-size: 30px !important;
+    }
+
+    html body .rakbuku-content .subtitle {
+        font-size: 17px !important;
+    }
+
+    html body .level-card h2 {
+        font-size: 25px !important;
+    }
+
+    html body .level-card p {
+        font-size: 16px !important;
+    }
+
+    html body .intro-content h1 {
+        font-size: 27px !important;
+    }
+
+    html body .intro-description {
+        font-size: 16px !important;
+    }
+
+    html body.book-selection-page .heading h1 {
+        font-size: 30px !important;
+    }
+
+    html body.book-selection-page .heading p {
+        font-size: 16px !important;
+    }
+
+    html body .book-heading h2 {
+        font-size: 27px !important;
+    }
+
+    html body .book-heading p {
+        font-size: 18px !important;
+    }
+
+    html body.activity-selection-page .activity-heading h1 {
+        font-size: 30px !important;
+    }
+
+    html body.activity-selection-page .activity-heading p {
+        font-size: 16px !important;
+    }
+
+    html body.activity-selection-page .PERMAINAN-card h2 {
+        font-size: 21px !important;
+    }
+
+    html body .PERMAINAN-heading h1 {
+        font-size: 24px !important;
+    }
+
+    html body .PERMAINAN-heading p {
+        font-size: 15px !important;
+    }
+}
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.bottom-buttons button {
+    border: none;
+    border-radius: 40px;
+    padding: 35px 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+    min-height: 100px;
+    cursor: pointer;
+}
+
+.back {
+    background: #777;
+}
+
+.next {
+    background: #299b63;
+}
